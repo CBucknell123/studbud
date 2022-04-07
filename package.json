@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/CBucknell123/studbud/issues"
   },
-  "homepage": "https://github.com/CBucknell123/studbud#readme"
+  "homepage": "https://github.com/CBucknell123/studbud#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
