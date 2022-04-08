@@ -1,0 +1,1 @@
+{"mappings":";ACEA;;;;AAEA;;;;;;;;AAQA;;;;AAEA;;;;;;;AAOA;;;;;AAKA;;;;AAEA;;;;AAEA;;;;AAEA;;;;AAEA","sources":["public/scss/main.scss","public/scss/typography.scss"],"sourcesContent":["@import \"typography.scss\", \"layout.scss\";",null],"names":[],"version":3,"file":"index.c74267d1.css.map","sourceRoot":"/__parcel_source_root/"}
