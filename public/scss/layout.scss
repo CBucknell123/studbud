@@ -1,3 +1,28 @@
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "banner banner banner"
+    "kanban-1 kanban-2 kanban-3"
+    "completed completed completed";
+}
+
+.header { grid-area: header; }
+
+.banner { grid-area: banner; }
+
+.kanban-1 { grid-area: kanban-1; }
+
+.kanban-2 { grid-area: kanban-2; }
+
+.kanban-3 { grid-area: kanban-3; }
+
+.completed { grid-area: completed; }
+
+
 /* Box sizing rules */
 *,
 *::before,

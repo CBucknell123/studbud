@@ -1,2 +1,72 @@
 @import "typography.scss", "layout.scss";
 
+.header {
+background-color:#eae2b7;
+// display: inline-block;
+position: sticky;
+top: 0;
+}
+
+.header > h1 {
+    vertical-align:middle;
+    line-height: 100px; 
+    color:#003049;
+    padding-left: 20px;
+}
+
+.banner {
+    background-color: #cacbd3;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.banner {
+    text-align: center;
+}
+
+.banner > h1 {
+    color:#003049;
+    padding-bottom: 20px;
+}
+
+.banner > .button {
+    color: #FFFFFF;
+    border: 2px solid;
+    border-color: #f77f00;
+    background-color: #f77f00;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 45px;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.kanban-1 {
+    background-color: #e9eff0;
+}
+
+.kanban-1 > h2 {
+    text-align: center;
+}
+
+
+.kanban-2 {
+    background-color: #e9eff0;
+}
+
+.kanban-2 > h2 {
+    text-align: center;
+}
+
+.kanban-3 {
+    background-color: #e9eff0;
+}
+
+.kanban-3 > h2 {
+    text-align: center;
+}
+
+
