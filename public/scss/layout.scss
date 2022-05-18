@@ -1,7 +1,7 @@
 .container {  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px 1fr 1fr 1fr;
-  gap: 10px 10px;
+  gap: 30px 30px;
   grid-auto-flow: row;
   grid-template-areas:
     "header header header"
@@ -21,6 +21,62 @@
 .kanban-3 { grid-area: kanban-3; }
 
 .completed { grid-area: completed; }
+
+// .wrapper {
+//   display: grid;
+//   gap: 20px;
+//   grid-template-areas:
+//     "kanban-1"
+//     "kanban-2"
+//     "kanban-3";
+// }
+
+@media (max-width: 960px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "header"
+    "banner"
+    "kanban-1"
+    "kanban-2" 
+    "kanban-3"
+    "completed";
+  }
+}
+
+@media (max-width: 960px) {
+  .kanban-1 {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 960px) {
+  .kanban-2 {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 960px) {
+  .kanban-3 {
+    margin-left: 30px;
+  }
+}
+
+
+// @media (max-width: 850px) {
+//   .kanban-1 + .kanban-2 + .kanban-3 {
+// display: flex;
+// flex-wrap: wrap;
+//   }
+// }
+
+// @media screen and (max-width: 768px) {
+//   body {
+//       grid-template-columns: 1fr;
+//    }
+//   }
 
 
 /* Box sizing rules */
