@@ -62,3 +62,7 @@ function renderTask(task){
   // Clear the input form
   form.reset();
 }
+
+document.getElementById("submitBtn").addEventListener("click", myFunction);
+function myFunction() {
+  window.location.href="study.html";}
