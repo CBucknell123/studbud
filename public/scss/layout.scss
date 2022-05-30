@@ -78,6 +78,27 @@
 //    }
 //   }
 
+.container-2 {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr 1fr;
+  gap: 30px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header-2 header-2 header-2"
+    "timers timers timers"
+    "music-player music-player music-player"
+    "dictionary dictionary dictionary";
+}
+
+.header-2 { grid-area: header-2; }
+
+.timers { grid-area: timers; }
+
+.music-player { grid-area: music-player; }
+
+.dictionary { grid-area: dictionary; }
+
+
 
 /* Box sizing rules */
 *,
