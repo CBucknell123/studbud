@@ -41,9 +41,97 @@
 
     <div class="music-player">
 
+<h1>
+  Music player:
+</h1>
+
+<iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX8Uebhn9wzrS?utm_source=generator" width="75%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+</iframe>
+
+<!-- code used from spotify's embed playlist feature https://newsroom.spotify.com/2018-09-04/how-to-embed-spotifys-play-button/#:~:text=Right%2Dclick%20any%20song%2C%20album,%E2%80%9CCopy%20Embed%20Code.%E2%80%9D)&text=Paste%20into%20the%20Play%20Button%20generator. -->
+
     </div>
 
     <div class="dictionary">
+
+      <h1>
+        Dictionary:
+      </h1>
+
+      <form action='https://dictionary.cambridge.org/search/english/direct/' method='get' target='_blank'> 
+        <input type='hidden' name='utm_source' value='widget_searchbox_source'/> 
+        <input type='hidden' name='utm_medium' value='widget_searchbox'/> 
+        <input type='hidden' name='utm_campaign' value='widget_tracking'/> 
+              <input class="search-query" name='q' placeholder='Search English' type='search' title='search' dir='auto' role='textbox' autocomplete='off' aria-controls='search' aria-multiline='false' aria-expanded='false' aria-label='Search' aria-required='true' aria-invalid='false' /> 
+              <button class="search-button" title='Search' type='submit'> 
+              Define
+            </button> 
+          </form>
+
+          <!-- code used and modified from https://dictionary.cambridge.org/freesearch.html that redirects to cambridge dictionary lookup -->
+
+      </div>
+
+        <div class="pomodoro-timers">
+
+          <h1>
+            Pomodoro:
+          </h1>
+
+          <!-- Pomodoro Container -->
+<div class="pomodoro-container">
+
+  <!-- Session -->
+  <div class="pomodoro-item">
+      <div id="labelSessionBreak" class="label">Session</div>
+      <div class="row-pomodoro">
+          <div id="timeLeft">25:00</div>
+      </div>
+  </div>
+
+  <!-- Session Length -->
+  <div class="pomodoro-item">
+      <div class="label">Session Length</div>
+      <div class="row-pomodoro">
+          <button id="sessionDecrement" class="btn-updown">-</button>
+          <div id="sessionLength" class="row-pomodoro lengthTime">25</div>
+          <button id="sessionIncrement" class="btn-updown">+</button>
+      </div>
+  </div>
+
+  <!-- Break Length -->
+  <div class="pomodoro-item">
+      <div class="label">Break Length</div>
+      <div class="row-pomodoro">
+          <button id="breakDecrement" class="btn-updown">-</button>
+          <div id="breakLength" class="row-pomodoro lengthTime">5</div>
+          <button id="breakIncrement" class="btn-updown">+</button>
+      </div>
+  </div>
+  
+  <!-- Play/Pause/Reset -->
+  <div class="pomodoro-item playerButton">
+      <div class="row-pomodoro buttonRow">
+          <button id="buttonPlay" class="btn-controller">
+              <i id="playIcon" class="fas fa-play" aria-hidden="true"></i>
+              start/stop
+          </button>
+          <button id="buttonReset" class="btn-controller"> 
+              <i class="fas fa-sync" aria-hidden="true"></i>
+              clear
+          </button>
+      </div>
+  </div>
+
+</div>
+
+<!-- Sound -->
+<audio id="beep" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3"></audio>
+
+<!-- code used and modified from https://codepen.io/Divlo/pen/vYEbPoB -->
+
+        </div>
+      
 
     </div>
 
