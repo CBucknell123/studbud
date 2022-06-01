@@ -1,6 +1,11 @@
+// For index.html this is the grid layout made from layout.it I made everything 1fr because of changing
+// sizes when interacting with the page and put in a 30px gap to mitgate problems of overlapping that
+// I have experienced previously when coding. I made the header and banner in px rather than fr as they didn't
+// change size and were being stretched out more than I intended because of the other components 
+
 .container {  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 1fr 1fr 1fr;
+  grid-template-rows: 100px 300px 1fr 1fr;
   gap: 30px 30px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -22,14 +27,8 @@
 
 .completed { grid-area: completed; }
 
-// .wrapper {
-//   display: grid;
-//   gap: 20px;
-//   grid-template-areas:
-//     "kanban-1"
-//     "kanban-2"
-//     "kanban-3";
-// }
+// For the mobile layout I knew that I wanted to have a stacking kanban board so I made everything go into 1
+// column when it reaches 960px which I was very happy with
 
 @media (max-width: 960px) {
   .container {
@@ -44,6 +43,9 @@
     "completed";
   }
 }
+
+// I also had to add in some more threshold requirements for mobile as I didnt take into consideration the
+// left and right margins so this fix made sure all the kanbans were centred in mobile
 
 @media (max-width: 960px) {
   .kanban-1 {
@@ -64,27 +66,19 @@
   }
 }
 
-
-// @media (max-width: 850px) {
-//   .kanban-1 + .kanban-2 + .kanban-3 {
-// display: flex;
-// flex-wrap: wrap;
-//   }
-// }
-
-// @media screen and (max-width: 768px) {
-//   body {
-//       grid-template-columns: 1fr;
-//    }
-//   }
+// This is the grid layout for the study page as I needed to use a seperate layout for both pages.
+// This consisted of no columns, just stacked rows as this was much easier to code for when putting the
+// primary and secondary features in. Once again I had to make some rows in px instead of fr as
+// things were being stretched and made the page look ugly and not aesthetically pleasing
 
 .container-2 {  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 1fr 500px 1fr 700px;
+  grid-template-rows: 100px 90px 1fr 500px 1fr 700px;
   gap: 30px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     "header-2 header-2 header-2"
+    "study-title study-title study-title"
     "timers timers timers"
     "music-player music-player music-player"
     "dictionary dictionary dictionary"
@@ -93,6 +87,8 @@
 
 .header-2 { grid-area: header-2; }
 
+.study-title { grid-area: study-title;}
+
 .timers { grid-area: timers; }
 
 .music-player { grid-area: music-player; }
@@ -100,9 +96,6 @@
 .dictionary { grid-area: dictionary; }
 
 .pomodoro-timers { grid-area: pomodoro-timers; }
-
-
-
 
 /* Box sizing rules */
 *,

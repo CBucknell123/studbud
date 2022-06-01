@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- this is the title for the landing page which was made different for the study room page -->
   <title>Studbud</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
+  <!-- these links to scss files allow for the styling to occur smoothly -->
   <link href="scss/layout.scss" rel="stylesheet" />
   <link href="scss/main.scss" rel="stylesheet" />
   <link href="scss/typography.scss" rel="stylesheet" />
+  <!-- this is the favicon that was repeated for both html pages -->
   <link rel="icon" href="/favicon.png" type="image/x-icon">
 </head>
 <body>
 
+  <!-- this is the container for my grid layout to ensure a smooth layout for all my assets -->
+
   <div class="container">
+
+    <!-- the header is a simple 100px row with the logo for the page in strong text styling -->
 
     <div class="header">
 
@@ -22,27 +29,29 @@
 
     </div>
 
+    <!-- I originally made the study room banner a 1fr grid but other assets caused 
+      it to stretch so I decided to make it a static 300px row as it never alters -->
+
     <div class="banner">
 
       <h1>
         Study room
       </h1>
 
-      <!-- <button class="button" id="submitBtn">
-        >
-      </button> -->
-
-      <!-- <button class="button" onclick="window.location.href='/study.html';">
-        >
-      </button> -->
+<!-- I struggled at first to get this to work as I used <button> instead of <a> but once 
+  I realised I could style a link this worked perfectly -->
 
       <a class="other-page" href="study.html">
         >
       </a>
 
     </div>
+    
+    <!--  -->
+    <!-- code below used from https://replit.com/@robdongas/InteractiveTaskList -->
+    <!--  -->
 
-    <!-- <div class="wrapper"> -->
+<!-- each kanban was done seperately in columns as to imitate the kanban aesthetic -->
 
     <div class="kanban-1">
       <h2>
@@ -168,7 +177,12 @@
       </ul>
     </div>
 
-  <!-- </div> -->
+    <!--  -->
+    <!-- code above used from https://replit.com/@robdongas/InteractiveTaskList -->
+    <!--  -->
+
+    <!-- Many attempts were made to make it so deleted files would go to the completed section 
+      of the landing page but this didnt work so it is there to show the visual of how I wanted it to work -->
 
     <div class="completed">
 
@@ -176,9 +190,11 @@
         Completed:
       </h1>
 
-
     </div>
   </div>
+
+  <!-- the link to this script file is different to the link for the script file on the study.html as 
+    there was overlapping in code that caused problems -->
 
   <script src="scripts/script.js"></script>
   <!-- Swap the scripts to see the working solution -->

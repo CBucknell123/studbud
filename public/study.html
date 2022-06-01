@@ -12,7 +12,12 @@
 </head>
 <body>
 
+  <!-- For this page I had to use a seperate grid layout which is why I named the class container-2 -->
+
   <div class="container-2">
+
+  <!-- This was header was very similar to the previous page except the title is replaced by a link styled
+    as a button to go back to the landing page to facilate a good user experience -->
 
     <div class="header-2">
 
@@ -22,11 +27,25 @@
 
     </div>
 
+    <div class="study-title">
+
+<!-- Each of these functions have titles that are styled the same way is this title below -->
+
+      <h1>
+        Study room:
+      </h1>
+
+    </div>
+
     <div class="timers">
 
       <h1>
         Stopwatch:
       </h1>
+
+    <!--  -->
+    <!-- stopwatch html below used from https://codepen.io/cathydutton/pen/xxpOOw -->
+    <!--  -->
 
       <div class="wrapper">
         <p><span id="seconds">00</span>:<span id="tens">00</span></p>
@@ -35,7 +54,9 @@
         <button id="button-reset">Reset</button>
         </div> 
 
-    <!-- timer html used from https://codepen.io/cathydutton/pen/xxpOOw -->
+    <!--  -->
+    <!-- stopwatch html above used from https://codepen.io/cathydutton/pen/xxpOOw -->
+    <!--  -->
 
     </div>
 
@@ -45,10 +66,19 @@
   Music player:
 </h1>
 
+<!--  -->
+<!-- html below used from spotify's embed playlist feature https://newsroom.spotify.com/2018-09-04/how-to-embed-spotifys-play-button/#:~:text=Right%2Dclick%20any%20song%2C%20album,%E2%80%9CCopy%20Embed%20Code.%E2%80%9D)&text=Paste%20into%20the%20Play%20Button%20generator. -->
+<!--  -->
+
+<!-- for this I used spotfys embed playlist feature and picked a 
+  generic study playlist to imitate a user on the website -->
+
 <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX8Uebhn9wzrS?utm_source=generator" width="75%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
 </iframe>
 
-<!-- code used from spotify's embed playlist feature https://newsroom.spotify.com/2018-09-04/how-to-embed-spotifys-play-button/#:~:text=Right%2Dclick%20any%20song%2C%20album,%E2%80%9CCopy%20Embed%20Code.%E2%80%9D)&text=Paste%20into%20the%20Play%20Button%20generator. -->
+<!--  -->
+<!-- html above used from spotify's embed playlist feature https://newsroom.spotify.com/2018-09-04/how-to-embed-spotifys-play-button/#:~:text=Right%2Dclick%20any%20song%2C%20album,%E2%80%9CCopy%20Embed%20Code.%E2%80%9D)&text=Paste%20into%20the%20Play%20Button%20generator. -->
+<!--  -->
 
     </div>
 
@@ -57,6 +87,14 @@
       <h1>
         Dictionary:
       </h1>
+
+    <!--  -->
+    <!-- dictionary html below used and modified from https://dictionary.cambridge.org/freesearch.html that redirects to cambridge dictionary lookup -->
+    <!--  -->
+
+    <!-- This took a lot of modification as the code used had the styling done in html 
+      so I got rid of all the styling and kept only the functional features and styled them myself
+      in main.scss  -->
 
       <form action='https://dictionary.cambridge.org/search/english/direct/' method='get' target='_blank'> 
         <input type='hidden' name='utm_source' value='widget_searchbox_source'/> 
@@ -68,7 +106,9 @@
             </button> 
           </form>
 
-          <!-- code used and modified from https://dictionary.cambridge.org/freesearch.html that redirects to cambridge dictionary lookup -->
+    <!--  -->
+    <!-- dictionary html above used and modified from https://dictionary.cambridge.org/freesearch.html that redirects to cambridge dictionary lookup -->
+    <!--  -->
 
       </div>
 
@@ -78,7 +118,11 @@
             Pomodoro:
           </h1>
 
-          <!-- Pomodoro Container -->
+<!--  -->
+<!-- html for pomodoro below used and modified from https://codepen.io/Divlo/pen/vYEbPoB -->
+<!--  -->  
+
+<!-- Pomodoro Container -->
 <div class="pomodoro-container">
 
   <!-- Session -->
@@ -128,14 +172,17 @@
 <!-- Sound -->
 <audio id="beep" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3"></audio>
 
-<!-- code used and modified from https://codepen.io/Divlo/pen/vYEbPoB -->
+<!--  -->
+<!-- html for pomodoro above used and modified from https://codepen.io/Divlo/pen/vYEbPoB -->
+<!--  -->
 
         </div>
       
-
     </div>
 
   </div>
+
+  <!-- script source is different to index.html as there was problems using the code in the same file -->
 
   <script src="scripts/script-2.js"></script>
   <!-- Swap the scripts to see the working solution -->

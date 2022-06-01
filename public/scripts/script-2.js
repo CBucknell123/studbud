@@ -1,3 +1,7 @@
+  //
+  //all code used below for stopwatch java is from https://codepen.io/cathydutton/pen/xxpOOw
+  //
+
 window.onload = function () {
   
     var seconds = 00; 
@@ -59,8 +63,18 @@ window.onload = function () {
   
   }
 
-  //timer java used from https://codepen.io/cathydutton/pen/xxpOOw
+  //
+  //all code used above for stopwatch java is from https://codepen.io/cathydutton/pen/xxpOOw
+  //
 
+
+
+
+
+  
+//
+// All code used below for pomodoro Java is from https://codepen.io/Divlo/pen/vYEbPoB 
+//
 
 
   /* Variables DOM */
@@ -210,8 +224,9 @@ breakIncrement.addEventListener('click', () => {
     breakLength = handleLengthButton(parseInt(breakLengthDOM.innerText), breakLengthDOM, true, true);
 });
 
-// pomodoro Java used from https://codepen.io/Divlo/pen/vYEbPoB 
-
+//
+// All code used above for pomodoro Java is from https://codepen.io/Divlo/pen/vYEbPoB 
+//
 
 
 

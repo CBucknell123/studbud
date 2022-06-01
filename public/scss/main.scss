@@ -1,11 +1,14 @@
 
+//For the header I reused the styling for both the html pages
 
 .header, .header-2 {
 background-color:#eae2b7;
-// display: inline-block;
 position: sticky;
 top: 0;
 }
+
+// This styling used the vertical align middle with the line height of 100px (header row px)
+// to ensure that the title is centred in the header and padding left so it is not against the side of the page
 
 .header > h1 {
     vertical-align:middle;
@@ -13,6 +16,9 @@ top: 0;
     color:#003049;
     padding-left: 20px;
 }
+
+// This served as the base styling for all the other boxes except for the background color 
+// to indicate it is different as this is how the user gets to the study page
 
 .banner {
     background-color: #cacbd3;
@@ -34,6 +40,8 @@ top: 0;
     padding-top: 20px;
 }
 
+// This is the base styling for all the buttons and links on the page
+
 .banner > .other-page {
     text-decoration: none;
     color: #FFFFFF;
@@ -51,9 +59,13 @@ top: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+// this styling is for the interactive task list so that it isnt pressed up against the side of the kanbans
+
 #taskform {
     padding-left: 20px;
 }
+
+// this is the base styling for each kanban but each has different margins to be centred on the page
 
 .kanban-1 {
     background-color: #e9eff0;
@@ -62,27 +74,17 @@ top: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.kanban-1 > h2 {
+// this h2 is used for the titles of each of the kanbans
+
+h2 {
     text-align: center;
-    // padding-top: 20px;
-    // padding-bottom: 20px;
     color:#003049;
 }
-
 
 .kanban-2 {
     background-color: #e9eff0;
     border-radius: 25px;
-    // margin-left: 20px;
-    // margin-right: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.kanban-2 > h2 {
-    text-align: center;
-    // padding-top: 20px;
-    // padding-bottom: 20px;
-    color:#003049;
 }
 
 .kanban-3 {
@@ -90,13 +92,6 @@ top: 0;
     margin-right: 30px;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.kanban-3 > h2 {
-    text-align: center;
-    // padding-top: 20px;
-    // padding-bottom: 20px;
-    color:#003049;
 }
 
 .completed > h1 {
@@ -114,6 +109,8 @@ top: 0;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+// This is the styling for the back button on the study page which utilises the button styling and header title styling
 
 .header-2 > .other-page-2 {
     text-decoration: none;
@@ -135,7 +132,14 @@ top: 0;
     line-height: 100px; 
 }
 
-//timer styling used from https://codepen.io/cathydutton/pen/xxpOOw
+.study-title > h1 {
+    color:#003049;
+    text-align: center;
+}
+
+//
+//stopwatch styling below used and modified from https://codepen.io/cathydutton/pen/xxpOOw
+//
 
     .wrapper {
         width: 800px;
@@ -147,6 +151,10 @@ top: 0;
         #seconds, #tens{
             font-size:50px;
           }
+
+//
+//stopwatch styling above used and modified from https://codepen.io/cathydutton/pen/xxpOOw
+//
           
           button{
             text-decoration: none;
@@ -158,13 +166,15 @@ top: 0;
             font-weight: bolder;
             border-radius: 45px;
             cursor: pointer;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            padding-left: 25px;
-            padding-right: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           margin: 10px;
-          }     
+          }  
+          
+     // THe styling for the stopwatch, music player and dictionary are all the same for the boxes they sit in
           
           .timers, .music-player, .dictionary {
             background-color: #e9eff0;
@@ -174,11 +184,17 @@ top: 0;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
+        // this title styling is reused for all the titles but cant be repeated in one line like the previous because of the
+        // styling for the title in the header of the index.html
+
         .timers > h1 {
             color:#003049;
             text-align: center;
             padding-top: 20px;
         }
+
+        // the display block allows for the margin left and right autos to make sure the embedded player always sits in the
+        // centre which is good for mobile use 
 
         .spotify {
             margin-top: 20px;
@@ -194,21 +210,12 @@ top: 0;
             padding-top: 20px;
         }
 
-        .pomodoro-timers {
-            background-color: #e9eff0;
-            margin-left: 30px;
-            margin-bottom: 30px;
-            margin-right: 30px;
-            border-radius: 25px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
+        //
+        // dictionary styling below used and modified from https://dictionary.cambridge.org/freesearch.html
+        //
 
-        .embedded-dictionary {
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-            margin-top: 20px;
-        }
+        // this styling required me to overhaul it to look larger and more 
+        // legible in the same font to create a consistent design
 
         .search-query {
             width: 35%;
@@ -226,7 +233,7 @@ top: 0;
             color: #444;
         }
 
-        // code used and modified from https://dictionary.cambridge.org/freesearch.html
+        // the search button for the dictionary uses the base button styling
 
         .search-button {
             text-decoration: none;
@@ -249,13 +256,30 @@ top: 0;
             margin-top: 30px;
         }
 
+        //
+        // dictionary styling above used and modified from https://dictionary.cambridge.org/freesearch.html
+        //
+
         .dictionary > h1 {
             color:#003049;
             text-align: center;
             padding-top: 20px;
         }
 
+        .pomodoro-timers {
+            background-color: #e9eff0;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            margin-right: 30px;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
 
+        // 
+        // pomodoro styling below used and modified from https://codepen.io/Divlo/pen/vYEbPoB
+        // 
+
+    // I got rid of the colouring for the container that holds the timer to create a sleek design
 
         .pomodoro-container {
             display: flex;
@@ -265,33 +289,44 @@ top: 0;
             margin-left: auto;
             margin-right: auto;
         }
+
         .pomodoro-item {
             width: 100%;
         }
+
+        //the colours, font sizes and text alignment were modified to suit the design
+
         .label {
             font-size: 1rem;
             text-transform: uppercase;
             color: #003049;
             text-align: center;
         }
+
         .row-pomodoro {
             margin: 8px 0 16px 0;
             text-align: center;
         }
+
         .playerButton {
             border-top: solid 3px #003049;
             padding-top: 12px;
         }
+
         .buttonRow {
             display: flex;
             justify-content: space-around;
         }
+
         .lengthTime {
             display: inline-block;
             padding: 0 20px 0 20px;
             font-size: 35px;
             color: #003049;
         }
+
+        // the buttons were styled similar to the previously styled buttons to create a consistent design
+
         .btn-updown {
             text-decoration: none;
             color: #FFFFFF;
@@ -309,12 +344,8 @@ top: 0;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           margin: 10px;
         }
+
         .btn-controller {
-            // border: none;
-            // cursor: pointer;
-            // font-size: 1.5rem;
-            // background-color: transparent;
-            // color: #fff;
             text-decoration: none;
             color: #FFFFFF;
             border: 2px solid;
@@ -331,6 +362,7 @@ top: 0;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           margin: 10px;
         }
+
         /* Pomodoro item row */
         #timeLeft {
             font-size: 3rem;
@@ -344,7 +376,9 @@ top: 0;
             padding-top: 20px;
         }
 
-        // code used and modified from https://codepen.io/Divlo/pen/vYEbPoB
+        // 
+        // pomodoro styling above used and modified from https://codepen.io/Divlo/pen/vYEbPoB
+        // 
 
         
 

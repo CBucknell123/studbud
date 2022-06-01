@@ -1,3 +1,7 @@
+//
+// All code below is used from https://replit.com/@robdongas/InteractiveTaskList
+//
+
 const form = document.getElementById("taskform");
 const button = document.querySelector("#taskform > button")
 var taskInput = document.getElementById("taskInput");
@@ -62,7 +66,3 @@ function renderTask(task){
   // Clear the input form
   form.reset();
 }
-
-// document.getElementById("submitBtn").addEventListener("click", myFunction);
-// function myFunction() {
-//   window.location.href="/study.html";}
